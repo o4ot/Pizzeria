@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzeria</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input id="address" name="address" type="text">
+                    </div>
+                    <div>
+                        <label for="number">Phone Number</label>
+                        <input id="number" name="number" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Type:</legend>
+                    <div>
+                        <input type="radio" id="cheese" name="pizza">
+                        <label for="cheese">Cheese</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pepperoni" name="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="margherita" name="margherita">
+                        <label for="margherita">Margherita</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <div>
+                            <input type="radio" id="small" name="size">
+                            <label for="small">Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="medium" name="size">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="large" name="size">
+                            <label for="large">Large</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="xLarge" name="size">
+                            <label for="xLarge">Extra Large</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sides:</legend>
+                    <div>
+                        <div>
+                            <input type="checkbox" id="bread" name="bread" value="bread">
+                            <label for="bread">Bread Sticks</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="wings" name="wings" value="wings">
+                            <label for="wings">Chicken Wings</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cheesebread" name="cheesebread" value="cheesebread">
+                            <label for="cheesebread">Cheesy Bread</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Drinks:</legend>
+                <div>
+                    <label for="drinkbrand">Please Choose One</label>
+                    <select name="drinkbrand" id="drinkbrand">
+                        <option value="coke">Coke</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="sprite">Sprite</option>
+                        <option value="fanta">Fanta Orange</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <div>
+                    <label for="SpecialRequests">Special Requests:</label>
+                    <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+                </div>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
