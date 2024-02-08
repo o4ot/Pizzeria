@@ -53,7 +53,7 @@ section header{
 }
 
 .row {
-    display: flex-wrap;
+    display: flex;
     gap: 16px;
 }
 
@@ -64,11 +64,11 @@ section header{
 }
 
 .content{
-    box-shadow: 0 1px 3px 0 rgba(0 0 0  0.1), 0 1px 2px -1px rgba(0 0 0  0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     background: white;
     padding: 20px;
     border-radius: 12px;
-    width: 500px;
+    width: 900px;
 }
 .center{
     display: flex;
